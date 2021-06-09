@@ -12,7 +12,12 @@ namespace NetAndMinAPI
 
         public static implicit operator UserServiceModel(User user)
         {
-            return new(user.Id, user.Name, user.Email);
+            return new UserServiceModel
+            {
+                Id = user.Id,
+                Email = user.Email,
+                Name = user.Name
+            };
         }
     }
 }

@@ -18,7 +18,14 @@ namespace NetAndMinAPI.Controllers
         [HttpGet("operations")]
         public User RunPOCOperations()
         {
-            User result = _userService.Add(new(Guid.NewGuid(), "Juan", "email@email.com"));
+            User result = _userService.Add(
+                new()
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "User name",
+                    Email = "email@email.com"
+                }
+            );
             
             _userService.Delete(result);
             return _userService.Get(Guid.NewGuid());

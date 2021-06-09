@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using POC.AuditWithAOP.Interceptors;
+using POC.AuditWithAOP.Attributes;
 using POC.AuditWithAOP.Models;
 using System;
 
@@ -28,7 +28,13 @@ namespace POC.AuditWithAOP
         [AuditInterceptor]
         public UserServiceModel Get(Guid id)
         {
-            UserServiceModel user = new(Guid.NewGuid(), "User name", "email@email.com");
+            UserServiceModel user = new()
+            {
+                Id = Guid.NewGuid(),
+                Name = "User name",
+                Email = "email@email.com"
+            };
+
             _logger.LogInformation($"User was deleted {user}");
 
             return user;

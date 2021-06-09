@@ -1,7 +1,7 @@
 ﻿using AspectCore.Configuration;
 using AspectCore.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
-using POC.AuditWithAOP.Interceptors;
+using POC.AuditWithAOP.Attributes;
 
 namespace POC.AuditWithAOP
 {
