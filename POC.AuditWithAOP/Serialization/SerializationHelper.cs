@@ -33,12 +33,14 @@ namespace POC.AuditWithAOP.Serialization
         {
             foreach(PropertyInfo propertyInfo in type.GetProperties())
             {
-                MaskedAttribute maskedAttribute = propertyInfo.GetCustomAttribute<MaskedAttribute>(); //TODO find a better way to filter PropertyInfo[]
+                MaskedAttribute maskedAttribute = propertyInfo.GetCustomAttribute<MaskedAttribute>(); 
+                //TODO find a better way to filter PropertyInfo[]
 
                 if (maskedAttribute != null)
                 {
                     string newValue = maskedAttribute.ReplaceableValue;
-                    propertyInfo.SetValue(instance, Convert.ChangeType(newValue, propertyInfo.PropertyType), null); //TODO This works because the property type is a string,
+                    propertyInfo.SetValue(instance, Convert.ChangeType(newValue, propertyInfo.PropertyType), null); 
+                    //TODO This works because the property type is a string,
                     //I belieave that the best way is to change the value in the serialization flow
                 }
             }
