@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace POC.AuditWithAOP.Attributes
 {
@@ -10,7 +6,8 @@ namespace POC.AuditWithAOP.Attributes
     public class MaskedAttribute : Attribute
     {
         private const string DefaultReplaceableValue = "*****";
-        public readonly string ReplaceableValue;
+
+        public string ReplaceableValue { get; init; }
 
         public MaskedAttribute(string replaceableValue = DefaultReplaceableValue)
         {

@@ -9,7 +9,9 @@ namespace POC.AuditWithAOP.Models
 {
     public class UserServiceModel
     {
+        [Masked("this is a Id")]
         public Guid Id { get; set; }
+        
         public string Name { get; set; }
 
         [Masked]
