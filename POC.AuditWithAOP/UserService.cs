@@ -18,6 +18,17 @@ namespace POC.AuditWithAOP
             return user;
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage
+            ("Major Code Smell", 
+            "S4144:Methods should not have identical implementations", 
+            Justification = "This is just a test method")
+        ]
+        public UserServiceModel AddWithoutProxy(UserServiceModel user)
+        {
+            _logger.LogInformation($"New user was added {user}");
+            return user;
+        }
+
         [AuditInterceptor]
         public bool Delete(UserServiceModel user)
         {

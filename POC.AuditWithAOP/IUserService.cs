@@ -7,6 +7,8 @@ namespace POC.AuditWithAOP
     {
         UserServiceModel Add(UserServiceModel user);
 
+        UserServiceModel AddWithoutProxy(UserServiceModel user);
+
         UserServiceModel Get(Guid id);
 
         bool Delete(UserServiceModel user);

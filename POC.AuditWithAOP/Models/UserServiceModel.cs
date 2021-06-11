@@ -15,6 +15,9 @@ namespace POC.AuditWithAOP.Models
         public string Name { get; set; }
 
         [Masked]
+        public int AccountNumber { get; set; }
+
+        [Masked]
         public string Email { get; set; }
 
         public override string ToString()
