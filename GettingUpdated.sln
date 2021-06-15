@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET6AndApi", "NET6AndApi\NET6AndApi.csproj", "{41ED183E-1575-4D42-84A5-E1221AF34341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET6AndApi", "NET6AndApi\NET6AndApi.csproj", "{41ED183E-1575-4D42-84A5-E1221AF34341}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAndMinAPI", "NetAndMinAPI\NetAndMinAPI.csproj", "{5CF1F385-9125-4404-A0F6-B4E2813F568A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetAndMinAPI", "NetAndMinAPI\NetAndMinAPI.csproj", "{5CF1F385-9125-4404-A0F6-B4E2813F568A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.AuditWithAOP", "POC.AuditWithAOP\POC.AuditWithAOP.csproj", "{0A2D6F23-D3BC-4970-9BFE-60BB1DDB430D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.AuditWithAOP", "POC.AuditWithAOP\POC.AuditWithAOP.csproj", "{0A2D6F23-D3BC-4970-9BFE-60BB1DDB430D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.AuditWithAOP.Benchmark.ConsoleApp", "POC.AuditWithAOP.Benchmark.ConsoleApp\POC.AuditWithAOP.Benchmark.ConsoleApp.csproj", "{E77EEEB5-E5D1-4953-A2E9-13999B83B4C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.AuditWithAOP.Benchmark.ConsoleApp", "POC.AuditWithAOP.Benchmark.ConsoleApp\POC.AuditWithAOP.Benchmark.ConsoleApp.csproj", "{E77EEEB5-E5D1-4953-A2E9-13999B83B4C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDb.Learning.Data", "CosmosDb.Learning.Data\CosmosDb.Learning.Data.csproj", "{2680C178-42C9-4A6B-B526-E4AEB08E3C18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E77EEEB5-E5D1-4953-A2E9-13999B83B4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E77EEEB5-E5D1-4953-A2E9-13999B83B4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E77EEEB5-E5D1-4953-A2E9-13999B83B4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2680C178-42C9-4A6B-B526-E4AEB08E3C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2680C178-42C9-4A6B-B526-E4AEB08E3C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2680C178-42C9-4A6B-B526-E4AEB08E3C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2680C178-42C9-4A6B-B526-E4AEB08E3C18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
