@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CosmosDb.Learning.Data\CosmosDb.Learning.Data.csproj" />
     <ProjectReference Include="..\POC.AuditWithAOP\POC.AuditWithAOP.csproj" />
   </ItemGroup>
 

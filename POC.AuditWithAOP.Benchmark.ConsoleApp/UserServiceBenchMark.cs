@@ -5,7 +5,7 @@ using System;
 
 namespace POC.AuditWithAOP.Benchmark.ConsoleApp
 {
-    [MarkdownExporter, AsciiDocExporter, HtmlExporter, CsvExporter, RPlotExporter]
+    [MemoryDiagnoser]
     public class UserServiceBenchMark
     {
         public static ILoggerFactory LogFactory { get; } = LoggerFactory.Create(builder =>

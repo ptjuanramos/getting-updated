@@ -1,10 +1,6 @@
 ﻿using CosmosDb.Learning.Data.Concrete;
+using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CosmosDb.Learning.Data
 {
@@ -12,7 +8,13 @@ namespace CosmosDb.Learning.Data
     {
         public static void AddCommands(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IAuditCommand, AuditCommand>();
+            serviceCollection.AddTransient<IAuditCommand>((_) => InitializeAuditCommandInstanceAsync());
+        }
+
+        private static AuditCommand InitializeAuditCommandInstanceAsync()
+        {
+            CosmosClient client = new("", "");
+            return new(client);
         }
     }
 }

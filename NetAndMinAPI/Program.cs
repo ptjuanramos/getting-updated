@@ -1,6 +1,6 @@
 using AspectCore.Extensions.DependencyInjection;
+using CosmosDb.Learning.Data;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using POC.AuditWithAOP;
 
@@ -9,6 +9,7 @@ hostBuilder.Host.UseServiceProviderFactory(new DynamicProxyServiceProviderFactor
 
 hostBuilder.Services.AddControllers();
 hostBuilder.Services.AddTransient<IUserService, UserService>();
+hostBuilder.Services.AddCommands(); //Add CQRS commands interfaces
 hostBuilder.Services.AddAuditInterceptor();
 
 await using WebApplication application = hostBuilder.Build();
