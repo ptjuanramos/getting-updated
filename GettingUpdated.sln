@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.AuditWithAOP", "POC.Aud
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.AuditWithAOP.Benchmark.ConsoleApp", "POC.AuditWithAOP.Benchmark.ConsoleApp\POC.AuditWithAOP.Benchmark.ConsoleApp.csproj", "{E77EEEB5-E5D1-4953-A2E9-13999B83B4C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDb.Learning.Data", "CosmosDb.Learning.Data\CosmosDb.Learning.Data.csproj", "{2680C178-42C9-4A6B-B526-E4AEB08E3C18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDb.Learning.Data", "CosmosDb.Learning.Data\CosmosDb.Learning.Data.csproj", "{2680C178-42C9-4A6B-B526-E4AEB08E3C18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAndMinAPI.Benchmark.ConsoleApp", "NetAndMinAPI.Benchmark.ConsoleApp\NetAndMinAPI.Benchmark.ConsoleApp.csproj", "{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2680C178-42C9-4A6B-B526-E4AEB08E3C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2680C178-42C9-4A6B-B526-E4AEB08E3C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2680C178-42C9-4A6B-B526-E4AEB08E3C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -42,8 +42,21 @@ namespace NetAndMinAPI.Controllers
                 return await Task.Run(() =>
                 {
                     s_user = new(Guid.NewGuid(), "New user", "email@email.com");
-                    Thread.Sleep(1000);
+                    return s_user;
+                });
+            }
 
+            return s_user;
+        }
+
+        [HttpGet("withoutvaluetasks")]
+        public async Task<User> TestingWithoutValueTasksInWebApis()
+        {
+            if (s_user == null)
+            {
+                return await Task.Run(() =>
+                {
+                    s_user = new(Guid.NewGuid(), "New user", "email@email.com");
                     return s_user;
                 });
             }
