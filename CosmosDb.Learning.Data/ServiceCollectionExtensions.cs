@@ -13,7 +13,11 @@ namespace CosmosDb.Learning.Data
 
         private static AuditCommand InitializeAuditCommandInstanceAsync()
         {
-            CosmosClient client = new("", "");
+            CosmosClient client = new (
+                "https://cosmosdb-audit-poc.documents.azure.com:443/", 
+                "v9Ea0pfThRwcpIIOHtnORFcdXNp5gIXjhYYgMkUkWNqQ87Ztu1zPavnHnTPdEhIdtyeEj9eLm2Qygqr8JdfRHw=="
+            );
+
             return new(client);
         }
     }
