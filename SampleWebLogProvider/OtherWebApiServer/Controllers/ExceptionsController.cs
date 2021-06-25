@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace OtherWebApiServer.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class ExceptionsController : ControllerBase
     {
         private readonly Random _random = new();
@@ -23,7 +23,16 @@ namespace OtherWebApiServer.Controllers
         public JsonResult Error()
         {
             int errorNumber = _random.Next(0, 1000000000);
-            _logger.LogError($"Error number {errorNumber}");
+            _logger.LogError($"Error log number {errorNumber}");
+
+            return new JsonResult("");
+        }
+
+        [HttpGet]
+        public JsonResult Critical()
+        {
+            int errorNumber = _random.Next(0, 1000000000);
+            _logger.LogCritical($"Critical log number {errorNumber}");
 
             return new JsonResult("");
         }
@@ -32,7 +41,7 @@ namespace OtherWebApiServer.Controllers
         public JsonResult Info()
         {
             int errorNumber = _random.Next(0, 1000000000);
-            _logger.LogError($"Error number {errorNumber}");
+            _logger.LogInformation($"Info log number {errorNumber}");
 
             return new JsonResult("");
         }

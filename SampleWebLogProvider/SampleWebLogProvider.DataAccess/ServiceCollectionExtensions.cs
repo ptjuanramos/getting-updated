@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using SampleWebLogProvider.DataAccess.Concrete;
 
 namespace SampleWebLogProvider.DataAccess
@@ -7,7 +9,7 @@ namespace SampleWebLogProvider.DataAccess
     {
         public static void AddLogRepository(this IServiceCollection services)
         {
-            services.AddTransient<ILogRepository, LogRepository>();
+            services.AddScoped<ILogRepository, LogRepository>();
         }
     }
 }

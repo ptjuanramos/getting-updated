@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using SampleWebLogProvider.DataAccess.Models;
 using System;
 using System.Collections.Generic;
@@ -8,19 +9,20 @@ namespace SampleWebLogProvider.DataAccess.Concrete
 {
     public class LogRepository : ILogRepository
     {
-        private readonly LogDbContext _logDbContext;
+        private readonly IDbContextFactory<LogDbContext> _logDbContextFactory;
 
-        public LogRepository(LogDbContext logDbContext)
+        public LogRepository(IDbContextFactory<LogDbContext> logDbContextFactory)
         {
-            _logDbContext = logDbContext;
+            _logDbContextFactory = logDbContextFactory;
         }
 
         public bool Create(Log log)
         {
             try
             {
-                EntityEntry<Log> trackedLog = _logDbContext.Logs.Add(log);
-                int result = _logDbContext.SaveChanges();
+                LogDbContext dbContext = _logDbContextFactory.CreateDbContext();
+                EntityEntry<Log> trackedLog = dbContext.Logs.Add(log);
+                int result = dbContext.SaveChanges();
 
                 return result == 1;
             } catch
@@ -35,12 +37,13 @@ namespace SampleWebLogProvider.DataAccess.Concrete
         {
             try
             {
-                Log foundLog = _logDbContext.Logs.SingleOrDefault(l => l.Id == log.Id);
+                LogDbContext dbContext = _logDbContextFactory.CreateDbContext();
+                Log foundLog = dbContext.Logs.SingleOrDefault(l => l.Id == log.Id);
                 if (foundLog == null)
                     return null;
 
-                EntityEntry<Log> trackedLog = _logDbContext.Logs.Update(log);
-                int result = _logDbContext.SaveChanges();
+                EntityEntry<Log> trackedLog = dbContext.Logs.Update(log);
+                int result = dbContext.SaveChanges();
 
                 return result == 1 ? trackedLog.Entity : null;
 
@@ -52,7 +55,8 @@ namespace SampleWebLogProvider.DataAccess.Concrete
 
         public IEnumerable<Log> GetAll()
         {
-            return _logDbContext.Logs.ToList();
+            LogDbContext dbContext = _logDbContextFactory.CreateDbContext();
+            return dbContext.Logs.ToList();
         }
     }
 }
