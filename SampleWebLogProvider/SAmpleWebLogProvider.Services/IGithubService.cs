@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace SAmpleWebLogProvider.Services
 {
     public interface IGithubService
     {
-        bool CreateIssue();
+        Task<bool> CreateIssue(Issue issue);
     }
 }

@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWebLogProvider.Web", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtherWebApiServer", "OtherWebApiServer\OtherWebApiServer.csproj", "{3F91CF3B-7A0C-4128-9D8B-637E099A0070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebLogProvider.DataAccess", "SampleWebLogProvider.DataAccess\SampleWebLogProvider.DataAccess.csproj", "{0D1C5262-4396-46FA-ACB4-38093BC4D0F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWebLogProvider.DataAccess", "SampleWebLogProvider.DataAccess\SampleWebLogProvider.DataAccess.csproj", "{0D1C5262-4396-46FA-ACB4-38093BC4D0F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAmpleWebLogProvider.Services", "SAmpleWebLogProvider.Services\SAmpleWebLogProvider.Services.csproj", "{F1C4D32D-2CFF-485F-84FF-A5CB3AC1B47B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAmpleWebLogProvider.Services", "SAmpleWebLogProvider.Services\SAmpleWebLogProvider.Services.csproj", "{F1C4D32D-2CFF-485F-84FF-A5CB3AC1B47B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebLogProvider.Common", "SampleWebLogProvider.Common\SampleWebLogProvider.Common.csproj", "{C9CA489D-3B7B-4FD5-A97D-A75876E17C62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F1C4D32D-2CFF-485F-84FF-A5CB3AC1B47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C4D32D-2CFF-485F-84FF-A5CB3AC1B47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C4D32D-2CFF-485F-84FF-A5CB3AC1B47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9CA489D-3B7B-4FD5-A97D-A75876E17C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9CA489D-3B7B-4FD5-A97D-A75876E17C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9CA489D-3B7B-4FD5-A97D-A75876E17C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9CA489D-3B7B-4FD5-A97D-A75876E17C62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
