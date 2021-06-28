@@ -5,6 +5,6 @@ namespace SAmpleWebLogProvider.Services
 {
     public interface IGithubService
     {
-        Task<bool> CreateIssue(Issue issue);
+        Task<bool> CreateIssue(Issue issue, string repo, string owner);
     }
 }
