@@ -5,6 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SampleWebLogProvider.Common;
+using SampleWebLogProvider.DataAccess;
+using SampleWebLogProvider.Web.Business;
+using SampleWebLogProvider.Web.Business.Concrete;
 using SAmpleWebLogProvider.Services;
 using System;
 using System.Collections.Generic;
@@ -28,6 +31,8 @@ namespace SampleWebLogProvider.Web
             services.Configure<GithubConfiguration>(Configuration.GetSection(GithubConfiguration.Section));
             services.AddControllersWithViews();
             services.AddExternalServices();
+            services.AddLogRepository(Configuration);
+            services.AddTransient<ILogStorageManager, LogStorageManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

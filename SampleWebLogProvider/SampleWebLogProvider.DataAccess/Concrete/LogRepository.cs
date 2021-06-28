@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace SampleWebLogProvider.DataAccess.Concrete
 {
-    public class LogRepository : ILogRepository
+    internal class LogRepository : ILogRepository
     {
         private readonly IDbContextFactory<LogDbContext> _logDbContextFactory;
 
@@ -42,7 +42,11 @@ namespace SampleWebLogProvider.DataAccess.Concrete
                 if (foundLog == null)
                     return null;
 
-                EntityEntry<Log> trackedLog = dbContext.Logs.Update(log);
+                foundLog.IssueCreated = log.IssueCreated;
+                foundLog.LogLevel = log.LogLevel;
+                foundLog.Message = log.Message;
+
+                EntityEntry<Log> trackedLog = dbContext.Logs.Update(foundLog);
                 int result = dbContext.SaveChanges();
 
                 return result == 1 ? trackedLog.Entity : null;

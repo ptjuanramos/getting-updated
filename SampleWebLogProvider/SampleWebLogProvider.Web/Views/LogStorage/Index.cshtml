@@ -1,0 +1,33 @@
+﻿@model IEnumerable<LogViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <table id="logs" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Log level</th>
+                <th>Message</th>
+                <th>Issue created</th>
+                <th>Create issue</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (LogViewModel logView in Model)
+                {
+                    <tr data-id="@logView.Id"
+                        data-log-level="@logView.LogLevel"
+                        data-message="@logView.Message"
+                        data-issue-created="@logView.IssueCreated">
+                        <td>@logView.LogLevel</td>
+                        <td>@logView.Message</td>
+                        <td>@logView.IssueCreated</td>
+                        <td><button class="create-issue-btn btn"><i class="fa fa-ambulance"></i></button></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

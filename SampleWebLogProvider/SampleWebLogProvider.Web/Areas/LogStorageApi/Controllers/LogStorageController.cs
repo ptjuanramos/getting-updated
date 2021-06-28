@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SampleWebLogProvider.Web.Areas.LogStorageApi.Models;
+using SampleWebLogProvider.Web.Business;
+using SampleWebLogProvider.Web.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SampleWebLogProvider.Web.Areas.LogStorageApi.Controllers
 {
@@ -7,15 +10,19 @@ namespace SampleWebLogProvider.Web.Areas.LogStorageApi.Controllers
     [ApiController]
     public class LogStorageController : ControllerBase
     {
-        public LogStorageController()
-        {
+        private readonly ILogStorageManager _logStorageManager;
 
+        public LogStorageController(ILogStorageManager logStorageManager)
+        {
+            _logStorageManager = logStorageManager;
         }
 
+        public IEnumerable<LogViewModel> GetAll() => _logStorageManager.GetAll();
+
         [HttpPost]
-        public JsonResult Create(Log log)
-        {
-            return null;
+        public async Task<LogViewModel> Create(LogViewModel log) {
+            await _logStorageManager.CreateIssue(log);
+            return log;
         }
     }
 }

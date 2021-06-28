@@ -14,9 +14,7 @@ namespace SampleWebLogProvider
         {
             loggingBuilder.AddConfiguration();
 
-            loggingBuilder.Services.AddDbContextFactory<LogDbContext>(opts => opts.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
-            
-            loggingBuilder.Services.AddSingleton<ILogRepository, LogRepository>();
+            loggingBuilder.Services.AddLogRepository(configuration);
             loggingBuilder.Services.AddSingleton<ILoggerProvider, WebLogProvider>();
 
             return loggingBuilder;

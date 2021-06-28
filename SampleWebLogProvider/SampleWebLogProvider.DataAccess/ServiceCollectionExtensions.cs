@@ -7,9 +7,10 @@ namespace SampleWebLogProvider.DataAccess
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddLogRepository(this IServiceCollection services)
+        public static void AddLogRepository(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<ILogRepository, LogRepository>();
+            services.AddDbContextFactory<LogDbContext>(opts => opts.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient<ILogRepository, LogRepository>();
         }
     }
 }
