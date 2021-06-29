@@ -10,6 +10,6 @@ namespace SampleWebLogProvider.Web.Business
     {
         IEnumerable<LogViewModel> GetAll();
 
-        Task<bool> CreateIssue(LogViewModel logViewModel);
+        Task<LogViewModel> CreateIssue(LogViewModel logViewModel);
     }
 }

@@ -23,7 +23,7 @@ namespace SampleWebLogProvider.Web.Business.Concrete
             _githubService = githubService;
         }
 
-        public async Task<bool> CreateIssue(LogViewModel logViewModel)
+        public async Task<LogViewModel> CreateIssue(LogViewModel logViewModel)
         {
             Issue issue = new()
             {
@@ -35,13 +35,13 @@ namespace SampleWebLogProvider.Web.Business.Concrete
 
             if (issueWasCreated)
             {
+                logViewModel.IssueCreated = true;
                 Log logToUpdate = logViewModel.ToDbModel();
-                logToUpdate.IssueCreated = true;
 
                 _logRepository.Update(logToUpdate);
             }
 
-            return issueWasCreated;
+            return logViewModel;
         }
 
         public IEnumerable<LogViewModel> GetAll()

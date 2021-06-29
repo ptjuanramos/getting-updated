@@ -21,8 +21,7 @@ namespace SampleWebLogProvider.Web.Areas.LogStorageApi.Controllers
 
         [HttpPost]
         public async Task<LogViewModel> Create(LogViewModel log) {
-            await _logStorageManager.CreateIssue(log);
-            return log;
+            return await _logStorageManager.CreateIssue(log); ;
         }
     }
 }

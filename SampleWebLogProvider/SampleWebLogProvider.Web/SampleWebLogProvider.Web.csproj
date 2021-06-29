@@ -14,11 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\LogStorageApi\Data\" />
-    <Folder Include="Areas\LogStorageApi\Views\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SampleWebLogProvider.Common\SampleWebLogProvider.Common.csproj" />
     <ProjectReference Include="..\SampleWebLogProvider.DataAccess\SampleWebLogProvider.DataAccess.csproj" />
     <ProjectReference Include="..\SAmpleWebLogProvider.Services\SAmpleWebLogProvider.Services.csproj" />
