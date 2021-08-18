@@ -7,8 +7,8 @@ namespace SampleProject.Console
     {
         static void Main(string[] args)
         {
-            ReportHandler reportHandler = new((r => false));
-            Report report = new("Juan Ramos", DateTime.Now, "This is a serious a report");
+            ReportHandler reportHandler = new(ActionAndFuncExamples.FuncExample);
+            Report report = new("Andre Ferreira", DateTime.Now, "This is a serious a report");
             reportHandler.Handle(report);
         }
     }

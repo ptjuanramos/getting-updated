@@ -13,7 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.AuditWithAOP.Benchmark.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDb.Learning.Data", "CosmosDb.Learning.Data\CosmosDb.Learning.Data.csproj", "{2680C178-42C9-4A6B-B526-E4AEB08E3C18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAndMinAPI.Benchmark.ConsoleApp", "NetAndMinAPI.Benchmark.ConsoleApp\NetAndMinAPI.Benchmark.ConsoleApp.csproj", "{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetAndMinAPI.Benchmark.ConsoleApp", "NetAndMinAPI.Benchmark.ConsoleApp\NetAndMinAPI.Benchmark.ConsoleApp.csproj", "{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.UsingStringValues", "POC.UsingStringValues\POC.UsingStringValues.csproj", "{991C29EF-8348-46D6-BF69-1EF986D2C20B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.UsingStringValues.Benchmark.ConsoleApp", "POC.UsingStringValues.Benchmark.ConsoleApp\POC.UsingStringValues.Benchmark.ConsoleApp.csproj", "{04108FA9-09F5-416E-9075-FFF8DE74905A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToSqlCare", "LinqToSqlCare\LinqToSqlCare.csproj", "{DC617A39-5866-47EF-9332-E957EE0D0D43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryVsCQRS", "RepositoryVsCQRS\RepositoryVsCQRS.csproj", "{C08041FF-FA9E-4185-87CE-0188CC96EE21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,22 @@ Global
 		{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FDE5128-0C85-47E8-B02E-5CAB607E8EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991C29EF-8348-46D6-BF69-1EF986D2C20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991C29EF-8348-46D6-BF69-1EF986D2C20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991C29EF-8348-46D6-BF69-1EF986D2C20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991C29EF-8348-46D6-BF69-1EF986D2C20B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04108FA9-09F5-416E-9075-FFF8DE74905A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04108FA9-09F5-416E-9075-FFF8DE74905A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04108FA9-09F5-416E-9075-FFF8DE74905A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04108FA9-09F5-416E-9075-FFF8DE74905A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC617A39-5866-47EF-9332-E957EE0D0D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC617A39-5866-47EF-9332-E957EE0D0D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC617A39-5866-47EF-9332-E957EE0D0D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC617A39-5866-47EF-9332-E957EE0D0D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08041FF-FA9E-4185-87CE-0188CC96EE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08041FF-FA9E-4185-87CE-0188CC96EE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08041FF-FA9E-4185-87CE-0188CC96EE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08041FF-FA9E-4185-87CE-0188CC96EE21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
