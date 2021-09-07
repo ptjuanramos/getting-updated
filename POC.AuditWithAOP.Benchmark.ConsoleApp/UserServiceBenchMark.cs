@@ -6,6 +6,7 @@ using System;
 namespace POC.AuditWithAOP.Benchmark.ConsoleApp
 {
     [MemoryDiagnoser]
+    [MarkdownExporterAttribute.GitHub]
     public class UserServiceBenchMark
     {
         public static ILoggerFactory LogFactory { get; } = LoggerFactory.Create(builder =>

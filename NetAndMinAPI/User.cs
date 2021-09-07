@@ -19,5 +19,16 @@ namespace NetAndMinAPI
                 Name = user.Name
             };
         }
+
+        public void Deconstruct(out string name, out string email)
+        {
+            name = Name;
+            email = Email;
+        }
+
+        public void Deconstruct(out string name)
+        {
+            name = Name;
+        }
     }
 }

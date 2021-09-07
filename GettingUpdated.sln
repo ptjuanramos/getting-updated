@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.UsingStringValues", "PO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.UsingStringValues.Benchmark.ConsoleApp", "POC.UsingStringValues.Benchmark.ConsoleApp\POC.UsingStringValues.Benchmark.ConsoleApp.csproj", "{04108FA9-09F5-416E-9075-FFF8DE74905A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToSqlCare", "LinqToSqlCare\LinqToSqlCare.csproj", "{DC617A39-5866-47EF-9332-E957EE0D0D43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqToSqlCare", "LinqToSqlCare\LinqToSqlCare.csproj", "{DC617A39-5866-47EF-9332-E957EE0D0D43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryVsCQRS", "RepositoryVsCQRS\RepositoryVsCQRS.csproj", "{C08041FF-FA9E-4185-87CE-0188CC96EE21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryVsCQRS", "RepositoryVsCQRS\RepositoryVsCQRS.csproj", "{C08041FF-FA9E-4185-87CE-0188CC96EE21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.CompleteTaskVsFromResult", "POC.CompleteTaskVsFromResult\POC.CompleteTaskVsFromResult.csproj", "{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{C08041FF-FA9E-4185-87CE-0188CC96EE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C08041FF-FA9E-4185-87CE-0188CC96EE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C08041FF-FA9E-4185-87CE-0188CC96EE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

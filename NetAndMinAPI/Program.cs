@@ -5,7 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using POC.AuditWithAOP;
 
 WebApplicationBuilder hostBuilder = WebApplication.CreateBuilder(args);
-hostBuilder.Host.UseServiceProviderFactory(new DynamicProxyServiceProviderFactory());
 
 hostBuilder.Services.AddControllers();
 hostBuilder.Services.AddTransient<IUserService, UserService>();

@@ -11,7 +11,6 @@ namespace POC.AuditWithAOP
 
         public UserService(ILogger<UserService> logger) => _logger = logger;
 
-        [AuditInterceptor]
         public UserServiceModel Add(UserServiceModel user)
         {
             _logger.LogInformation($"New user was added {user}");
@@ -29,14 +28,12 @@ namespace POC.AuditWithAOP
             return user;
         }
 
-        [AuditInterceptor]
         public bool Delete(UserServiceModel user)
         {
             _logger.LogInformation($"User was deleted {user}");
             return true;
         }
 
-        [AuditInterceptor]
         public UserServiceModel Get(Guid id)
         {
             UserServiceModel user = new()
