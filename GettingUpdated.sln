@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqToSqlCare", "LinqToSqlC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryVsCQRS", "RepositoryVsCQRS\RepositoryVsCQRS.csproj", "{C08041FF-FA9E-4185-87CE-0188CC96EE21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.CompleteTaskVsFromResult", "POC.CompleteTaskVsFromResult\POC.CompleteTaskVsFromResult.csproj", "{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.CompleteTaskVsFromResult", "POC.CompleteTaskVsFromResult\POC.CompleteTaskVsFromResult.csproj", "{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIWithAppInsights", "APIWithAppInsights\APIWithAppInsights.csproj", "{19B2A2FC-529F-42A7-B1EE-AE3ADD7899BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E2B1823-DAA3-4D95-B801-E7C76EC02CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B2A2FC-529F-42A7-B1EE-AE3ADD7899BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B2A2FC-529F-42A7-B1EE-AE3ADD7899BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B2A2FC-529F-42A7-B1EE-AE3ADD7899BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B2A2FC-529F-42A7-B1EE-AE3ADD7899BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
