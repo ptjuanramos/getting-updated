@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.SignalR.Poc.Web", "Azure.SignalR.Poc.Web\Azure.SignalR.Poc.Web.csproj", "{2D541CC8-1890-4D23-925A-BBD2D0E37A3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.SignalR.Poc.API", "Azure.SignalR.Poc.API\Azure.SignalR.Poc.API.csproj", "{68BAC81A-A895-4379-A283-63E9A3986657}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D541CC8-1890-4D23-925A-BBD2D0E37A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D541CC8-1890-4D23-925A-BBD2D0E37A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D541CC8-1890-4D23-925A-BBD2D0E37A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D541CC8-1890-4D23-925A-BBD2D0E37A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BAC81A-A895-4379-A283-63E9A3986657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BAC81A-A895-4379-A283-63E9A3986657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BAC81A-A895-4379-A283-63E9A3986657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BAC81A-A895-4379-A283-63E9A3986657}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70FDB324-308E-4C30-9A50-73795B05CF04}
+	EndGlobalSection
+EndGlobal
