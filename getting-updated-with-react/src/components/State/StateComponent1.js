@@ -26,7 +26,7 @@ export class StateComponent1 extends React.Component  {
         let divisor = 2;
 
         while (number > divisor){
-          if(number % divisor == 0){
+          if(number % divisor === 0){
            return false;
           }
           else
@@ -41,7 +41,7 @@ export class StateComponent1 extends React.Component  {
         const { isPrimeNumber, number } = this.state;
 
         //TODO - 
-        if(number != -1)
+        if(number !== -1)
             primeNumberElement = <p>The number {isPrimeNumber} { isPrimeNumber ? 'is a' : 'is not a'} prime number.</p>
 
         return (
