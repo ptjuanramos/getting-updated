@@ -44,6 +44,7 @@ mkcert localhost
 Create .env file in your react app folder root and place the follow configurations.
 
 ```
+HTTPS=true
 SSL_CRT_FILE=localhost.pem 
 SSL_KEY_FILE=localhost-key.pem
 ```
